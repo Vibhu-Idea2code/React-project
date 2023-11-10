@@ -51,7 +51,7 @@ function App(){
           <InputWeather/>
           <ButtonWhether onClick={weather.fetchData} value="search"/>
           <CardWhether/>
-          <ButtonWhether value="Refresh"/>
+          {/* <ButtonWhether value="Refresh"/> */}
         </div>
           </Route>  
           <Route exact path="/meme">

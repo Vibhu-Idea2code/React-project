@@ -5,15 +5,19 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 // import { CounterProvider } from './Context/Counter';
 import { CartProvider } from './Context/Cart';
+import { WeatherProvider } from './Context/Weather';
+import { BrowserRouter } from'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <BrowserRouter>
 <CartProvider>
+  <WeatherProvider>
+
     <App />
+  </WeatherProvider>
 </CartProvider>
-   
-  </React.StrictMode>
+</BrowserRouter> 
 );
 
 // If you want to start measuring performance in your app, pass a function
